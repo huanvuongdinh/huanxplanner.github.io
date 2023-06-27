@@ -1,0 +1,104 @@
+body {
+    font-family: 'Inconsolata';
+    padding-top: 60pt;
+}
+
+
+.title-box {
+    background-color: #d8d8d8;
+    height: 60px;
+}
+
+.title {
+    padding-left: 350px;
+    font-size: 25pt;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+/* menu */
+.menu {
+    margin: 10px 0 0 350px;
+    
+}
+
+.menu > ul > li{
+    margin: 0 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.menu > ul > li:hover .sub-menu1{
+    display: block;
+}
+
+.menu li:first-child{
+    margin-left: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #d8d8d8;
+    padding-bottom: 20px;
+}
+.menu a:hover{
+    color: #000000;
+}
+
+.sub-menu1 {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: #343a40;
+    width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.sub-menu1 li{
+    display: inline-block;
+}
+
+.sub-menu1 a{
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 250px;
+    margin-top: 10px;
+    border-left: 1px dashed  #d8d8d8;
+    width: 100%;
+    height: 200px;
+}
+
+.sub-menu1 a:hover{
+    text-decoration: underline ;
+    color: #d8d8d8;
+}
+
+/* text */
+
+.main-text {
+    padding-left: 350px;
+    margin-top: 300px;
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+.body-text {
+    padding-left: 350px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.btn {
+    margin-left: 350px;
+    display: inline-block;
+    background-color: black;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 16pt;
+}
