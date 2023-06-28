@@ -10,6 +10,7 @@ body {
 }
 
 .title {
+    margin-right: 300px;
     padding-left: 350px;
     font-size: 25pt;
     font-weight: 400;
@@ -19,7 +20,7 @@ body {
 /* menu */
 .menu {
     margin: 10px 0 0 350px;
-    
+    margin-right: 300px;
 }
 
 .menu > ul > li{
@@ -80,15 +81,26 @@ body {
 
 .main-text {
     padding-left: 350px;
+    margin-right: 300px;
+    margin-top: 50px;
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+.sub-main-text {
+    padding-left: 350px;
+    margin-right: 300px;
     margin-top: 300px;
     font-size: 30pt;
     font-weight: 600;
+    color: bisque;
 }
 
 .body-text {
     padding-left: 350px;
     padding-top: 20px;
     font-weight: 400;
+    margin-right: 300px;
 }
 
 .btn {
@@ -101,4 +113,5 @@ body {
     padding: 10px;
     font-weight: 400;
     font-size: 16pt;
+    margin-bottom: 100px;
 }
