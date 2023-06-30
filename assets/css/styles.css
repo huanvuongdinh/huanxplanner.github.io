@@ -7,12 +7,12 @@ body {
 .title-box {
     background-color: #d8d8d8;
     height: 60px;
-    width: vw;
+    width: 100%;
 }
 
 .title {
     margin-right: 300px;
-    padding-left: 350px;
+    margin-left: 350px;
     font-size: 25pt;
     font-weight: 400;
     line-height: 60px;
@@ -91,7 +91,7 @@ body {
 .sub-main-text {
     margin-left: 350px;
     margin-right: 300px;
-    margin-top: 300px;
+    margin-top: 30px;
     font-size: 30pt;
     font-weight: 600;
     color: bisque;
@@ -115,4 +115,14 @@ body {
     font-weight: 400;
     font-size: 16pt;
     margin-bottom: 100px;
+}
+
+/* cover */
+
+.cover {
+    box-sizing: content-box;
+    margin-left: 350px;
+    width: 640px;
+    height: 485px;
+    margin-top: 20px;
 }
