@@ -291,7 +291,7 @@ header {
 
 /* =================================== FRAME MOTION =================================== */
 
-.carousel .sub-title {
+.framemotion .sub-title {
   color: #000;
   font-family: Inter;
   font-size: 12.4rem;
@@ -299,20 +299,21 @@ header {
   font-weight: 700;
   line-height: 140.523%; /* 174.248px */
   white-space: nowrap;
+  animation: RightToLeft 60s infinite linear;
 }
 
-.carousel ul {
+.framemotion ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.carousel {
+.framemotion {
   position: relative;
   overflow: hidden;
 }
 
-.carousel__slider {
+.framemotion__slider {
   position: relative;
   display: flex;
   align-items: center;
@@ -320,14 +321,14 @@ header {
   height: 200px;
 }
 
-.carousel__list {
+.framemotion__list {
   position: absolute;
   width: 100%;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-.carousel__item {
+.framemotion__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,4 +336,13 @@ header {
   height: 100px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
