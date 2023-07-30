@@ -271,7 +271,7 @@ header {
 
 .philosophy .btn:hover {
   border: 2px solid #000000;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .philosophy a {
@@ -462,6 +462,15 @@ header {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact .content .btn:hover {
+  border: 2px solid #000000;
+  background-color: #000000;
+}
+
+.contact .content .btn a:hover {
+  color: #ffffff
 }
 
 .contact .content a{
