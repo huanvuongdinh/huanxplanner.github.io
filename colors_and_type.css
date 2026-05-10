@@ -1,0 +1,293 @@
+/* =========================================================
+   Huan Planner — Colors & Type
+   Black & white system with a single magenta accent.
+   ========================================================= */
+
+/* Brand mono — Office Code Pro (sole font for the entire site) */
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-Light.otf') format('opentype');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-LightItalic.otf') format('opentype');
+  font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-Regular.otf') format('opentype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-RegularItalic.otf') format('opentype');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-Medium.otf') format('opentype');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-MediumItalic.otf') format('opentype');
+  font-weight: 500; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-Bold.otf') format('opentype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  src: url('fonts/OfficeCodePro-BoldItalic.otf') format('opentype');
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+
+:root {
+  /* ---------- Color tokens ---------- */
+  --hxp-black: #0a0a0a;
+  --hxp-ink:   #1a1a1a;
+  --hxp-graphite: #3a3a3a;
+  --hxp-slate:    #6b6b6b;
+  --hxp-mute:     #a8a8a8;
+  --hxp-rule:     #d8d8d8;
+  --hxp-paper:    #f4f2ee;   /* off-white, slight warm cast */
+  --hxp-page:     #ffffff;
+
+  /* Accent — magenta plum */
+  --hxp-accent:        #38002A;
+  --hxp-accent-deep:   #240019;
+  --hxp-accent-tint:   #F7EAF2;   /* very light wash */
+  --hxp-accent-line:   #b3007a;   /* lighter lift for hover/links */
+
+  /* Semantic */
+  --fg-1: var(--hxp-black);       /* primary text */
+  --fg-2: var(--hxp-graphite);    /* body text */
+  --fg-3: var(--hxp-slate);       /* secondary / meta */
+  --fg-4: var(--hxp-mute);        /* labels, captions */
+  --bg-1: var(--hxp-page);        /* primary background */
+  --bg-2: var(--hxp-paper);       /* warm panel */
+  --bg-inverse: var(--hxp-black);
+  --fg-inverse: var(--hxp-page);
+  --line:      var(--hxp-rule);
+  --line-strong: var(--hxp-black);
+  --accent:    var(--hxp-accent);
+  --accent-on: #ffffff;
+
+    --font-display: 'Office Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  --font-body:    'Office Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  --font-mono:    'Office Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+  /* ---------- Type scale ---------- */
+  --fs-mega:   clamp(64px, 9vw, 144px);
+  --fs-h1:     clamp(44px, 6vw, 88px);
+  --fs-h2:     clamp(32px, 4vw, 56px);
+  --fs-h3:     clamp(24px, 2.4vw, 36px);
+  --fs-h4:     20px;
+  --fs-lead:   22px;
+  --fs-body:   17px;
+  --fs-small:  14px;
+  --fs-meta:   12px;
+
+  /* Line heights */
+  --lh-tight:  0.95;
+  --lh-snug:   1.1;
+  --lh-normal: 1.45;
+  --lh-loose:  1.6;
+
+  /* ---------- Spacing ---------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  /* ---------- Radii ---------- */
+  --r-0: 0;          /* default — sharp corners */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-pill: 999px;
+
+  /* ---------- Borders ---------- */
+  --bw-hair: 1px;
+  --bw-rule: 1.5px;
+  --bw-thick: 2px;
+
+  /* ---------- Shadows (used sparingly) ---------- */
+  --shadow-1: 0 1px 0 rgba(10,10,10,0.06);
+  --shadow-2: 0 8px 24px rgba(10,10,10,0.08);
+  --shadow-focus: 0 0 0 3px rgba(82,0,58,0.35);
+}
+
+/* =========================================================
+   Base elements
+   ========================================================= */
+
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h4, .h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-h4);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.mega {
+  font-family: var(--font-display);
+  font-size: var(--fs-mega);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+}
+
+p, .p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  color: var(--fg-2);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-size: var(--fs-lead);
+  line-height: 1.4;
+  color: var(--fg-1);
+  font-weight: 400;
+}
+
+.eyebrow,
+.label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-1);
+}
+
+.meta {
+  font-family: var(--font-body);
+  font-size: var(--fs-meta);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+
+hr, .rule {
+  border: 0;
+  border-top: var(--bw-hair) solid var(--line-strong);
+  margin: 0;
+}
+
+/* Accent helpers */
+.fg-accent { color: var(--accent); }
+.bg-accent { background: var(--accent); color: var(--accent-on); }
+.bg-inverse { background: var(--bg-inverse); color: var(--fg-inverse); }
+.bg-paper   { background: var(--bg-2); }
+
+/* Section construct */
+.hxp-section {
+  border-top: var(--bw-hair) solid var(--line-strong);
+  padding: var(--s-9) var(--s-7);
+}
+
+.hxp-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  padding: 14px 22px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: var(--bw-rule) solid var(--line-strong);
+  background: var(--bg-1);
+  color: var(--fg-1);
+  border-radius: var(--r-0);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+.btn:hover { background: var(--fg-1); color: var(--bg-1); }
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--accent-on);
+  border-color: var(--accent);
+}
+.btn--primary:hover { background: var(--hxp-accent-deep); border-color: var(--hxp-accent-deep); }
+
+.btn--ghost {
+  background: transparent;
+  border-color: currentColor;
+}
+
+.btn .arrow {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+.btn:hover .arrow { transform: translateX(4px); }
